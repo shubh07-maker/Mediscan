@@ -1,19 +1,12 @@
 {
-  "name": "mediscan-ai-client",
+  "name": "mediscan-ai",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "description": "MediScan AI full-stack starter (React + Express + OpenAI integration).",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.2"
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "echo Run server and client in separate terminals using npm run dev:server and npm run dev:client"
   }
 }
